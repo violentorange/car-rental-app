@@ -1,0 +1,473 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "webfejleszto_car_rentals_api",
+    "collectionId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+    "dateExported": "2024-05-14T15:37:22.225Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Cars",
+            "containerId": "",
+            "created": "2024-05-07T15:39:14.352Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Car rentals",
+            "containerId": "",
+            "created": "2024-05-07T15:39:24.823Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "86b3aece-bf32-4c5b-b84e-29374193a7b0",
+            "name": "auth",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "created": "2024-05-14T13:58:51.846Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "01363858-be44-40b1-9ae5-df41cfd044c7",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Get all cars",
+            "url": "http://127.0.0.1:8000/api/cars",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-07T14:29:58.656Z",
+            "modified": "2024-05-07T15:02:31.625Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c87dcc16-4c82-4ef0-8cfc-3de467d6fa6e",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Get all rentals of a car",
+            "url": "http://127.0.0.1:8000/api/cars/11/rentals",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-07T15:39:48.702Z",
+            "modified": "2024-05-14T15:31:20.463Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|0NoEzFN4MIUGrLNf5Vd92k5BmZvpB5e5eDXqeLSV3e3a12fd"
+            }
+        },
+        {
+            "_id": "396fe398-e767-4df3-9dbc-54170fd60c0d",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Delete car",
+            "url": "http://127.0.0.1:8000/api/cars/6",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-05-07T15:33:09.302Z",
+            "modified": "2024-05-14T15:25:09.494Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|0NoEzFN4MIUGrLNf5Vd92k5BmZvpB5e5eDXqeLSV3e3a12fd"
+            }
+        },
+        {
+            "_id": "d077105a-b68b-4570-90c9-8d4675c01765",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Get one rental",
+            "url": "http://127.0.0.1:8000/api/rentals/999",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-07T15:46:20.074Z",
+            "modified": "2024-05-14T15:19:47.231Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|0NoEzFN4MIUGrLNf5Vd92k5BmZvpB5e5eDXqeLSV3e3a12fd"
+            }
+        },
+        {
+            "_id": "2be1b2f8-5e88-4e35-bb7d-0f96e015fa51",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Delete rental",
+            "url": "http://127.0.0.1:8000/api/rentals/11",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2024-05-14T13:30:54.992Z",
+            "modified": "2024-05-14T15:31:45.232Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|0NoEzFN4MIUGrLNf5Vd92k5BmZvpB5e5eDXqeLSV3e3a12fd"
+            }
+        },
+        {
+            "_id": "11937c61-cb15-44fa-b70b-3c6e15e29629",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Create new car",
+            "url": "http://127.0.0.1:8000/api/cars",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-07T15:10:17.270Z",
+            "modified": "2024-05-14T15:27:29.733Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"plate_number\": \"AX-BB-123\",\n  \"owner\": \"Bárki Bátor\",\n  \"make\": \"Skoda\",\n  \"model\": \"Octavia\",\n  \"performance\": 123\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "5|HswEHdidhhsZ3253aSDyNZP529CP4ckwts69Y748b039df77"
+            }
+        },
+        {
+            "_id": "0dff0276-d8d0-4faa-b0a0-11088d3c5e58",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Add new rental to a car",
+            "url": "http://127.0.0.1:8000/api/cars/11/rentals",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-07T15:51:07.609Z",
+            "modified": "2024-05-14T15:31:01.391Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"start_date\": \"2024-06-01\",\n  \"end_date\": \"2024-06-21\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|0NoEzFN4MIUGrLNf5Vd92k5BmZvpB5e5eDXqeLSV3e3a12fd"
+            }
+        },
+        {
+            "_id": "eeaefb57-613e-4ecd-a4d0-07803aefd603",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "e30147bd-104f-4b2f-82fa-fcd2ea8a545e",
+            "name": "Update rental",
+            "url": "http://127.0.0.1:8000/api/rentals/12",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-05-14T13:31:48.967Z",
+            "modified": "2024-05-14T13:32:41.815Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"end_date\": \"2024-04-21\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cbb1a22c-8a2f-452b-9d92-a76f53a80b1c",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Update car",
+            "url": "http://127.0.0.1:8000/api/cars/103",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-05-07T15:34:43.925Z",
+            "modified": "2024-05-07T15:36:03.498Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"model\": \"Octavia RS\",\n  \"performance\": 321\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b86de1a7-5909-47b5-ad28-8bdb7dfd35e7",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "153fcc75-3ba0-4dd0-9502-fafd7d4f8575",
+            "name": "Search car",
+            "url": "http://127.0.0.1:8000/api/cars/10",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-07T15:02:47.366Z",
+            "modified": "2024-05-14T14:24:45.811Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "cde5c759-89ff-4563-a534-b38a16b03f55",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "86b3aece-bf32-4c5b-b84e-29374193a7b0",
+            "name": "Register",
+            "url": "http://127.0.0.1:8000/api/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-05-14T13:59:05.313Z",
+            "modified": "2024-05-14T14:56:24.056Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Makk Márton\",\n  \"email\": \"makkmarci@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "445312d0-4296-4a50-8fc8-864af1c3e4d3",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "86b3aece-bf32-4c5b-b84e-29374193a7b0",
+            "name": "Login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-14T14:06:40.655Z",
+            "modified": "2024-05-14T14:07:15.596Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"gipsy@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c8c0303e-e40f-4ae9-a37e-9c7bbbe52df7",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "86b3aece-bf32-4c5b-b84e-29374193a7b0",
+            "name": "Logout",
+            "url": "http://127.0.0.1:8000/api/logout",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-05-14T14:13:24.751Z",
+            "modified": "2024-05-14T14:20:49.192Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|D8DbOZetWQj5Pxm8opzV1Nyj6Y6Z9xKpQAHq38Cx19052cc7"
+            }
+        },
+        {
+            "_id": "6c2aedc2-3fb2-4585-815e-0c110b4e4cf3",
+            "colId": "ed926f42-3534-4f4a-a4ed-9d46d12fbb36",
+            "containerId": "86b3aece-bf32-4c5b-b84e-29374193a7b0",
+            "name": "Get user data",
+            "url": "http://127.0.0.1:8000/api/user",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-05-14T14:16:57.111Z",
+            "modified": "2024-05-14T14:20:44.019Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|D8DbOZetWQj5Pxm8opzV1Nyj6Y6Z9xKpQAHq38Cx19052cc7"
+            }
+        }
+    ],
+    "ref": "_iuOvlDCe-7PniwYC8j9ADaPeX7x-pihb_yR3GT6KOYMUqWushXnHQshUUPGJ92QO2_QqP_rKjAJgjBqKVpayQ"
+}
